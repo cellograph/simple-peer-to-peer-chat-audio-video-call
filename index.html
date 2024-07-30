@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PeerJS Chat App</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <h1>PeerJS Chat App</h1>
+      <div id="connection-form">
+        <input type="text" id="peer-id-input" placeholder="Your Peer ID" />
+        <button id="generate-peer-id">Generate Peer ID</button>
+        <input
+          type="text"
+          id="peer-id-to-connect"
+          placeholder="Peer ID to connect"
+        />
+        <button id="connect-button">Connect</button>
+      </div>
+      <div id="chat-container" style="display: none">
+        <div id="messages"></div>
+        <input type="text" id="message-input" placeholder="Type your message" />
+        <button id="send-button">Send</button>
+        <button id="audio-call-button">Start Audio Call</button>
+        <button id="video-call-button">Start Video Call</button>
+        <button id="end-call-button" style="display: none">End Call</button>
+      </div>
+      <div id="call-container" style="display: none">
+        <video id="local-video" autoplay muted></video>
+        <video id="remote-video" autoplay></video>
+      </div>
+    </div>
+    <script src="https://unpkg.com/peerjs@1.4.7/dist/peerjs.min.js"></script>
+    <script src="./script-2.js"></script>
+  </body>
+</html>
