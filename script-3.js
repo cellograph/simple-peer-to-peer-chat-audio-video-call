@@ -1,6 +1,12 @@
 // Firebase configuration (replace with your own config)
 const firebaseConfig = {
-  // Your Firebase config here
+  apiKey: "AIzaSyCHi71Le9wojTJd7zkmTrgJvxuZnxWm9NI",
+  authDomain: "simple-chat-41aaa.firebaseapp.com",
+  projectId: "simple-chat-41aaa",
+  storageBucket: "simple-chat-41aaa.appspot.com",
+  messagingSenderId: "793072997279",
+  appId: "1:793072997279:web:d1ead03cf0b492e21aa3aa",
+  measurementId: "G-H31NTCPYD9",
 };
 
 // Initialize Firebase
